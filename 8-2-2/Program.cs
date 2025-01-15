@@ -17,6 +17,8 @@
                 if (!directoryInfo.Exists)
                     directoryInfo.Create();
                 Console.WriteLine(dirInfo.GetDirectories().Length + dirInfo.GetFiles().Length);
+                directoryInfo.Delete();
+                Console.WriteLine(dirInfo.GetDirectories().Length + dirInfo.GetFiles().Length);
 
             }
             catch {
